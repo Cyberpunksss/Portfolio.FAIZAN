@@ -5,9 +5,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="style1.css">
-    <style>
-        
-    </style>
+<style>
+   /* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Introduction */
+#intro {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#intro h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#intro p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Skills */
+#skills {
+    background: #f9f9f9;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#skills h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#skills li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+#skills li::before {
+    content: "• ";
+    color: red; /* Change color as needed */
+}
+
+/* Projects */
+#projects {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#projects h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Blog */
+#blog {
+    background: #f9f9f9;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#blog h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Contact */
+#contact {
+    background: #fff;
+    padding: 2rem;
+    margin: 2rem auto;
+    max-width: 800px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+#contact form {
+    margin-top: 1rem;
+}
+
+#contact input[type="text"],
+#contact textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+#contact input[type="submit"] {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+    background: #555;
+}
+
+.div {
+    border: 1px solid black;
+    width: 150px;
+    margin: auto;
+    border-radius: 50%;
+    height: 150px;
+    position: relative;
+}
+
+.img {
+    object-fit: fill;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 25px;
+}
+
+.div-1 {
+    width: 100%;
+    height: 215px;
+    background-color: blue;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+}
+
+.div-2 {
+    overflow: hidden;
+}
+
+.div-2 > h2 {
+    text-decoration: underline;
+    margin-top: 270px;
+    font-weight: 900;
+}
+
+.box {
+    margin: auto;
+    border: 2px solid black;
+    height: 500px;
+    width: 90%;
+    max-width: 350px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 0.8rem; /* Adjusting font size for smaller screens */
+    }
+
+    #intro, #skills, #projects, #blog, #contact {
+        max-width: 90%;
+    }
+
+    .div {
+        width: 100px;
+        height: 100px; /* Decreasing the size of the circle for smaller screens */
+    }
+
+    .div-1 {
+        width: 100%;
+    }
+
+    .box {
+        max-width: 300px;
+    }
+}
+.width {
+    width: 100vw; /* Set width to 100% of viewport width */
+    max-width: 100%; /* Ensure it doesn't exceed the parent container's width */
+    margin: 0 auto; /* Center horizontally */
+}     
+</style>
 </head>
 <body>
 
